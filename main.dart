@@ -7,11 +7,11 @@ void main() {
   } else {
     print("The student has Failed");
   }
-
-
-
-
-
-
-  
-}
+  int a = 30;
+  int b = 60;
+  if (a < 50 && a < b) {
+    print("both conditions are true");
+  } else {
+    print("both conditions are not true");
+  }
+  }
