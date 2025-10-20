@@ -1,4 +1,7 @@
 void main() {
+  
+  // Pass or fail check
+
   int marks = 45;
   double attendance = 80.0;
 
@@ -7,6 +10,9 @@ void main() {
   } else {
     print("The student has Failed");
   }
+  
+  // Checking the Condition is True
+  
   int a = 30;
   int b = 60;
   if (a < 50 && a < b) {
@@ -14,4 +20,7 @@ void main() {
   } else {
     print("both conditions are not true");
   }
+
+  
+
   }
