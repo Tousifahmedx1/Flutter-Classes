@@ -86,6 +86,7 @@ if (age1 > age2) {
   print("Both ages are equal");
 }
 
+  // Task 2: Check if a number is positive, negative, or zero
 int number = -5;
 
 if (number > 0) {
@@ -96,4 +97,32 @@ if (number > 0) {
   print("The number is zero");
 }
 
+  // Task 3: Check if it's a square or rectangle
+
+  int length = 10;
+  int breadth = 10;
+if (length == breadth) {
+  print("The shape is a square");
+} else {
+  print("The shape is a rectangle");
+}
+
+  // Task 4: Temperature message
+int temperature = 42;
+
+if (temperature < 0) {
+  print("Freezing weather");
+} else if (temperature >= 0 && temperature < 10) {
+  print("Very Cold weather");
+} else if (temperature >= 10 && temperature < 20) {
+  print("Cold weather");
+} else if (temperature >= 20 && temperature < 30) {
+  print("Normal in Temperature");
+} else if (temperature >= 30 && temperature < 40) {
+  print(" Its Hot temperature");
+} else if (temperature >= 40) {
+  print("Its Very Hot temperature");
+} else {
+  print("It's cold");
+}
 }
