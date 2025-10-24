@@ -73,4 +73,15 @@ void main() {
   print("Computer: $computer");
   print("Total Marks: $totalMarks2");
   print("Percentage: ${percentage2.toStringAsFixed(2)}%");
+
+  int age1 = 20;
+  int age2 = 25;
+
+if (age1 > age2) {
+  print("Age1 is older and Age2 is younger");
+} else if (age2 > age1) {
+  print("Age2 is older and Age1 is younger");
+} else {
+  print("Both ages are equal");
+}
 }
