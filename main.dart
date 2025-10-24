@@ -74,6 +74,7 @@ void main() {
   print("Total Marks: $totalMarks2");
   print("Percentage: ${percentage2.toStringAsFixed(2)}%");
 
+ // Task 1: Compare two ages
   int age1 = 20;
   int age2 = 25;
 
@@ -84,4 +85,15 @@ if (age1 > age2) {
 } else {
   print("Both ages are equal");
 }
+
+int number = -5;
+
+if (number > 0) {
+  print("The number is positive");
+} else if (number < 0) {
+  print("The number is negative");
+} else {
+  print("The number is zero");
+}
+
 }
