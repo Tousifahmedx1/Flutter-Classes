@@ -35,4 +35,11 @@ void main() {
   print('Original list: $originallist');
   print('Reversed list: $reversedlist');
   
+  List <int> numlist = [ 5, -10, -15, 20, 25 ];
+  List <int> positiveNumbers =numlist.where( (number) => number > 0).toList();
+  print('Positive numbers: $positiveNumbers');  
+
+  List <String> userElgibility = [ 'Alice', 'Bob', 'Charlie','Eligible', 'Diana' ];
+  userElgibility.removeWhere( (name) => name == 'Eligible' );
+  print('"Eligible user": $userElgibility');
 }
