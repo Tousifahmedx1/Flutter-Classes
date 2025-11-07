@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 void main () {
@@ -70,5 +71,38 @@ List <int> MoreNumbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
 List <int> EvenNumbers = MoreNumbers.where( (number)=> number %2 ==0).toList();
 print('Original Numbers List: $MoreNumbers');
 print('Even Numbers List: $EvenNumbers');
+
+// Question No 8: Making Eligible Criteria
+
+Map <String, dynamic> Student = {
+  'Name': 'Ahmed',
+  'Age': 20,
+  'IsStudent': true,
+  };
+
+  if (Student ['Age'] >= 18 && Student ['IsStudent'] == true) {
+    print('${Student['Name']} is eligible.');
+  } else {
+    print('${Student['Name']} is not eligible.');
+  } 
+
+  // Question No 9: Checking Product Stock
+
+  Map <String, int> ProductStock = {
+    'Laptop': 5,
+    'Smartphone': 0,
+    'Headphones': 10,
+    'Monitor': 2,
+  };
+  String productToCheck = 'Smartphone';
+  if (ProductStock.containsKey(productToCheck)) {
+    if (ProductStock[productToCheck]! > 0) {
+      print('$productToCheck is in stock.');
+    } else {
+      print('$productToCheck is out of stock.');
+    }
+  } else {
+    print('$productToCheck does not exist in the inventory.');
+  }
 
 }
