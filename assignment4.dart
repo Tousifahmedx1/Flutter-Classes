@@ -64,4 +64,11 @@ List <int> PositiveNumbers = MixedNumbers.where ((number)=> number >0).toList();
 print('Original Mixed Numbers List: $MixedNumbers');
 print('Positive Numbers List: $PositiveNumbers');
 
+// Question No 7: Taking Even Numbers
+
+List <int> MoreNumbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+List <int> EvenNumbers = MoreNumbers.where( (number)=> number %2 ==0).toList();
+print('Original Numbers List: $MoreNumbers');
+print('Even Numbers List: $EvenNumbers');
+
 }
