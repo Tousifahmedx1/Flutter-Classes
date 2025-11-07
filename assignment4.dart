@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main () {
  
 //  Question No 1: Remove Duplicates from a List
@@ -13,4 +15,17 @@ void main () {
 
   print('All Students: $AllStudents');
   print('New Students (Duplicates Removed): $NewStudents');
+
+// Question No 2: take N Value
+
+List <String> Fruits = [ 'Apple', 'Banana', 'Mango', 'Orange', 'Pineapple', 'Grapes' ];
+int N = 3;
+
+if (N <= Fruits.length) {
+  List <String> FirstNFruits = Fruits.sublist(0, N);
+  print('Original Fruits List: $Fruits');
+  print('First $N Fruits: $FirstNFruits');
+} else {
+  print('N is greater than the length of the list.');
+  }
 }
