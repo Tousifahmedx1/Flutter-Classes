@@ -1,4 +1,7 @@
 void main () {
+ 
+//  Question No 1: Remove Duplicates from a List
+
   List <String> AllStudents = [ 'Ali', 'Sara', 'John', 'Ayesha', 'Ali', 'Sara', 'John', 'Ayesha'  ];
   List <String> NewStudents = []; 
 
