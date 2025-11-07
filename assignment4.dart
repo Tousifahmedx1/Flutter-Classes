@@ -48,4 +48,20 @@ for (int number in Numbers){
 }
 print('Original Numbers List: $Numbers');
 print('Unique Numbers List: $UniqueNumbers');
+
+// Question No 5: Sorted List
+
+List <int> UnsortedNumbers = [ 42, 23, 16, 15, 8, 4 ];
+List <int> SortedNumbers = List.from(UnsortedNumbers); 
+SortedNumbers.sort();
+print('Original Unsorted Numbers List: $UnsortedNumbers');
+print('Sorted Numbers List: $SortedNumbers');
+
+// Question No 6: Taking Positive Numbers
+
+List <int> MixedNumbers = [ -10, 15, -20, 25, -30, 35 ];
+List <int> PositiveNumbers = MixedNumbers.where ((number)=> number >0).toList();
+print('Original Mixed Numbers List: $MixedNumbers');
+print('Positive Numbers List: $PositiveNumbers');
+
 }
