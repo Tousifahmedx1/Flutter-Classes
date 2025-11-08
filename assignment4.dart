@@ -105,4 +105,116 @@ Map <String, dynamic> Student = {
     print('$productToCheck does not exist in the inventory.');
   }
 
+// Question No 10: Car Match Criteria
+
+  Map<String, dynamic> car = {
+    'brand': 'Toyota',
+    'color': 'Red',
+    'isSedan': true,
+  };
+
+  if (car['isSedan'] == true && car['color'] == 'Red') {
+    print('Match');
+  } else {
+    print('No match');
+  }
+
+// Question No 11: User Role Check
+  Map<String, dynamic> user = {
+    'name': 'Tousif',
+    'isAdmin': true,
+    'isActive': true,
+  };
+
+  if (user['isAdmin'] == true && user['isActive'] == true) {
+    print('Active admin');
+  } else {
+    print('Not an active admin');
+  }
+
+// Question No 12: Shopping Cart Product Check
+  Map<String, int> cart = {
+    'Banana': 6,
+    'Orange': 3,
+    'Apple': 4,
+    'Grapes': 2,
+  };
+
+  // Step 2: Check if 'Apple' exists in the cart
+  if (cart.containsKey('Apple')) {
+    print('Product found');
+  } else {
+    print('Product not found');
+  }
+
+// Question No 13: Accessing List and Map Elements
+
+  List<String> tasks = ['Study Dart', 'Build App', 'Sleep'];
+  Map<String, dynamic> user1 = {
+    'name': 'Tousif',
+    'isActive': true,
+  };
+
+  print('First task: ${tasks[0]}');
+  print('User name: ${user1['name']}');
+
+
+  // Question No 14: Incrementing a Number
+
+  int num = 5;
+  num++; // ✅ Valid
+  print(num); // Output: 6
+
+
+
+
+// Question No 15: Difference between a++ and a = a + 1
+  int a = 5;
+
+  // Using a++
+  int result1 = a++; // result1 gets 5, then a becomes 6
+  print('After a++: result1 = $result1, a = $a');
+
+  // Resetting a
+  a = 5;
+
+  // Using a = a + 1
+  int result2 = a = a + 1; // result2 gets 6, a becomes 6
+  print('After a = a + 1: result2 = $result2, a = $a');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
